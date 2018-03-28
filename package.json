@@ -1,5 +1,5 @@
 {
-    "name": "paysera-js-style-guide",
+    "name": "@paysera/js-style-guide",
     "version": "0.0.1",
     "description": "A mostly reasonable approach to JavaScript.",
     "scripts": {
