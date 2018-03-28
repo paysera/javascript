@@ -24,9 +24,9 @@
   "comment": "MD006: Consider starting bulleted lists at the beginning of the line",
   "ul-start-left": false,
 
-  "comment": "MD007: Unordered list indentation: 2 spaces",
+  "comment": "MD007: Unordered list indentation: 4 spaces",
   "ul-indent": {
-    "indent": 2
+    "indent": 4
   },
 
   "comment": "MD009: Disallow trailing spaces",

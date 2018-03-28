@@ -28,14 +28,14 @@
   // Prohibit use of == and != in favor of === and !==.
   "eqeqeq": true,
 
-  // Enforce tab width of 2 spaces.
-  "indent": 2,
+  // Enforce tab width of 4 spaces.
+  "indent": 4,
 
   // Prohibit use of a variable before it is defined.
   "latedef": true,
 
-  // Enforce line length to 100 characters
-  "maxlen": 100,
+  // Enforce line length to 120 characters
+  "maxlen": 120,
 
   // Require capitalized names for constructor functions.
   "newcap": true,
