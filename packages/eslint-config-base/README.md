@@ -1,6 +1,6 @@
-# eslint-config-paysera-base
+# @paysera/eslint-config-base
 
-[![npm version](https://badge.fury.io/js/eslint-config-paysera-base.svg)](http://badge.fury.io/js/eslint-config-paysera-base)
+[![npm version](https://badge.fury.io/js/%40paysera%2Feslint-config-base.svg)](http://badge.fury.io/js/%40paysera%2Feslint-config-base)
 
 This package provides Paysera's base JS .eslintrc (without React plugins) as an extensible shared config.
 
@@ -8,29 +8,29 @@ This package provides Paysera's base JS .eslintrc (without React plugins) as an 
 
 We export two ESLint configurations for your usage.
 
-### eslint-config-paysera-base
+### @paysera/eslint-config-base
 
 Our default export contains all of our ESLint rules, including ECMAScript 6+. It requires `eslint` and `eslint-plugin-import`.
 
-If you use yarn, run `npm info "eslint-config-paysera-base@latest" peerDependencies` to list the peer dependencies and versions, then run `yarn add --dev <dependency>@<version>` for each listed peer dependency. See below for npm instructions.
+If you use yarn, run `npm info "@paysera/eslint-config-base@latest" peerDependencies` to list the peer dependencies and versions, then run `yarn add --dev <dependency>@<version>` for each listed peer dependency. See below for npm instructions.
 
 1. Install the correct versions of each package, which are listed by the command:
 
     ```sh
-    npm info "eslint-config-paysera-base@latest" peerDependencies
+    npm info "@paysera/eslint-config-base@latest" peerDependencies
     ```
 
     If using **npm 5+**, use this shortcut
 
     ```sh
-    npx install-peerdeps --dev eslint-config-paysera-base
+    npx install-peerdeps --dev @paysera/eslint-config-base
     ```
 
     If using **npm < 5**, Linux/OSX users can run
 
     ```sh
     (
-        export PKG=eslint-config-paysera-base;
+        export PKG=@paysera/eslint-config-base;
         npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
     )
     ```
@@ -38,20 +38,20 @@ If you use yarn, run `npm info "eslint-config-paysera-base@latest" peerDependenc
     Which produces and runs a command like:
 
     ```sh
-        npm install --save-dev eslint-config-paysera-base eslint@^#.#.# eslint-plugin-import@^#.#.#
+        npm install --save-dev @paysera/eslint-config-base eslint@^#.#.# eslint-plugin-import@^#.#.#
     ```
 
     If using **npm < 5**, Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
 
     ```sh
     npm install -g install-peerdeps
-    install-peerdeps --dev eslint-config-paysera-base
+    install-peerdeps --dev @paysera/eslint-config-base
     ```
 
     The cli will produce and run a command like:
 
     ```sh
-    npm install --save-dev eslint-config-paysera-base eslint@^#.#.# eslint-plugin-import@^#.#.#
+    npm install --save-dev @paysera/eslint-config-base eslint@^#.#.# eslint-plugin-import@^#.#.#
     ```
 
 2. Add `"extends": "paysera-base"` to your .eslintrc.
