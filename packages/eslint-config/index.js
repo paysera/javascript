@@ -1,7 +1,7 @@
 module.exports = {
     extends: [
         'eslint-config-airbnb',
-        'eslint-config-paysera-base',
+        '@paysera/eslint-config-base',
     ].map(require.resolve),
     rules: {
         strict: ['error', 'never']
