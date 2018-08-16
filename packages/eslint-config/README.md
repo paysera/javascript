@@ -10,7 +10,7 @@ We export three ESLint configurations for your usage.
 
 ### @paysera/eslint-config
 
-Our default export contains all of our ESLint rules, including ECMAScript 6+ and React. It requires `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, and `eslint-plugin-jsx-a11y`. If you don't need React, see [@paysera/eslint-config-base](https://npmjs.com/@paysera/eslint-config-base).
+Our default export contains all of our ESLint rules, including ECMAScript 6+ and React. It requires `eslint`, `eslint-plugin-import`, `eslint-plugin-react`, and `eslint-plugin-jsx-a11y`. If you don't need React, see [@paysera/eslint-config-base](https://www.npmjs.com/package/@paysera/eslint-config-base).
 
 If you use yarn, run `npm info "@paysera/eslint-config@latest" peerDependencies` to list the peer dependencies and versions, then run `yarn add --dev <dependency>@<version>` for each listed peer dependency. See below for npm instructions.
 
@@ -53,7 +53,7 @@ If you use yarn, run `npm info "@paysera/eslint-config@latest" peerDependencies`
     npm install --save-dev @paysera/eslint-config eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
     ```
 
-2. Add `"extends": "paysera"` to your .eslintrc
+2. Add `"extends": "@paysera"` to your .eslintrc
 
 See [Paysera's Javascript styleguide](https://github.com/paysera/js-style-guide) and
 the [ESlint config docs](https://eslint.org/docs/user-guide/configuring#extending-configuration-files)
