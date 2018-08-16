@@ -27,12 +27,15 @@ module.exports = {
 
         // specify the maximum length of a line in your program
         // https://eslint.org/docs/rules/max-len
-        'max-len': ['error', 120, 2, {
+        'max-len': ['error', 120, 4, {
             ignoreUrls: true,
             ignoreComments: false,
             ignoreRegExpLiterals: true,
             ignoreStrings: true,
             ignoreTemplateLiterals: true,
         }],
+
+        // https://eslint.org/docs/rules/class-methods-use-this
+        'class-methods-use-this': ['off'],
     }
 };

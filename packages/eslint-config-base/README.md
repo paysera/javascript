@@ -54,7 +54,7 @@ If you use yarn, run `npm info "@paysera/eslint-config-base@latest" peerDependen
     npm install --save-dev @paysera/eslint-config-base eslint@^#.#.# eslint-plugin-import@^#.#.#
     ```
 
-2. Add `"extends": "paysera-base"` to your .eslintrc.
+2. Add `"extends": "@paysera/base"` to your .eslintrc.
 
 See [Paysera's overarching ESLint config](https://npmjs.com/eslint-config-paysera), [Paysera's Javascript styleguide](https://github.com/paysera/js-style-guide), and the [ESlint config docs](https://eslint.org/docs/user-guide/configuring#extending-configuration-files) for more information.
 
