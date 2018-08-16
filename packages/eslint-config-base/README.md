@@ -16,43 +16,43 @@ If you use yarn, run `npm info "@paysera/eslint-config-base@latest" peerDependen
 
 1. Install the correct versions of each package, which are listed by the command:
 
-    ```sh
-    npm info "@paysera/eslint-config-base@latest" peerDependencies
-    ```
+  ```sh
+  npm info "@paysera/eslint-config-base@latest" peerDependencies
+  ```
 
-    If using **npm 5+**, use this shortcut
+  If using **npm 5+**, use this shortcut
 
-    ```sh
-    npx install-peerdeps --dev @paysera/eslint-config-base
-    ```
+  ```sh
+  npx install-peerdeps --dev @paysera/eslint-config-base
+  ```
 
-    If using **npm < 5**, Linux/OSX users can run
+  If using **npm < 5**, Linux/OSX users can run
 
-    ```sh
-    (
-        export PKG=@paysera/eslint-config-base;
-        npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-    )
-    ```
+  ```sh
+  (
+    export PKG=@paysera/eslint-config-base;
+    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
+  )
+  ```
 
-    Which produces and runs a command like:
+  Which produces and runs a command like:
 
-    ```sh
-        npm install --save-dev @paysera/eslint-config-base eslint@^#.#.# eslint-plugin-import@^#.#.#
-    ```
+  ```sh
+  npm install --save-dev @paysera/eslint-config-base eslint@^#.#.# eslint-plugin-import@^#.#.#
+  ```
 
-    If using **npm < 5**, Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
+  If using **npm < 5**, Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
 
-    ```sh
-    npm install -g install-peerdeps
-    install-peerdeps --dev @paysera/eslint-config-base
-    ```
+  ```sh
+  npm install -g install-peerdeps
+  install-peerdeps --dev @paysera/eslint-config-base
+  ```
 
-    The cli will produce and run a command like:
+  The cli will produce and run a command like:
 
-    ```sh
-    npm install --save-dev @paysera/eslint-config-base eslint@^#.#.# eslint-plugin-import@^#.#.#
-    ```
+  ```sh
+  npm install --save-dev @paysera/eslint-config-base eslint@^#.#.# eslint-plugin-import@^#.#.#
+  ```
 
 2. Add `"extends": "@paysera/base"` to your .eslintrc.
 

@@ -16,42 +16,42 @@ If you use yarn, run `npm info "@paysera/eslint-config@latest" peerDependencies`
 
 1. Install the correct versions of each package, which are listed by the command:
 
-    ```sh
-    npm info "@paysera/eslint-config@latest" peerDependencies
-    ```
+  ```sh
+  npm info "@paysera/eslint-config@latest" peerDependencies
+  ```
 
-    If using **npm 5+**, use this shortcut
+  If using **npm 5+**, use this shortcut
 
-    ```sh
-    npx install-peerdeps --dev @paysera/eslint-config
-    ```
+  ```sh
+  npx install-peerdeps --dev @paysera/eslint-config
+  ```
 
-    If using **npm < 5**, Linux/OSX users can run
+  If using **npm < 5**, Linux/OSX users can run
 
-    ```sh
-    (
-        export PKG=@paysera/eslint-config;
-        npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
-    )
-    ```
+  ```sh
+  (
+    export PKG=@paysera/eslint-config;
+    npm info "$PKG@latest" peerDependencies --json | command sed 's/[\{\},]//g ; s/: /@/g' | xargs npm install --save-dev "$PKG@latest"
+  )
+  ```
 
-    Which produces and runs a command like:
+  Which produces and runs a command like:
 
-    ```sh
-    npm install --save-dev @paysera/eslint-config eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
-    ```
+  ```sh
+  npm install --save-dev @paysera/eslint-config eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
+  ```
 
-    If using **npm < 5**, Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
+  If using **npm < 5**, Windows users can either install all the peer dependencies manually, or use the [install-peerdeps](https://github.com/nathanhleung/install-peerdeps) cli tool.
 
-    ```sh
-    npm install -g install-peerdeps
-    install-peerdeps --dev @paysera/eslint-config
-    ```
-    The cli will produce and run a command like:
+  ```sh
+  npm install -g install-peerdeps
+  install-peerdeps --dev @paysera/eslint-config
+  ```
+  The cli will produce and run a command like:
 
-    ```sh
-    npm install --save-dev @paysera/eslint-config eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
-    ```
+  ```sh
+  npm install --save-dev @paysera/eslint-config eslint@^#.#.# eslint-plugin-jsx-a11y@^#.#.# eslint-plugin-import@^#.#.# eslint-plugin-react@^#.#.#
+  ```
 
 2. Add `"extends": "@paysera"` to your .eslintrc
 
