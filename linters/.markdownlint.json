@@ -24,14 +24,14 @@
   "comment": "MD006: Consider starting bulleted lists at the beginning of the line",
   "ul-start-left": false,
 
-  "comment": "MD007: Unordered list indentation: 4 spaces",
+  "comment": "MD007: Unordered list indentation: 2 spaces",
   "ul-indent": {
-    "indent": 4
+    "indent": 2
   },
 
   "comment": "MD009: Disallow trailing spaces",
   "no-trailing-spaces": {
-    "br-spaces": 0,
+    "br_spaces": 0,
     "comment": "Empty lines inside list items should not be indented",
     "list_item_empty_lines": false
   },
@@ -47,7 +47,7 @@
   "comment": "MD012: Disallow multiple consecutive blank lines",
   "no-multiple-blanks": {
     "maximum": 1
-   },
+  },
 
   "comment": "MD013: Line length",
   "line-length": false,
