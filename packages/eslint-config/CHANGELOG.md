@@ -2,7 +2,7 @@
 ==================
   - turn off rule 'import/prefer-default-export'
   - turn off rule 'no-plusplus'
-  - turn off deprecated rule 'label-has-for', rule 'label-has-associated-control' replaces it
+  - turn off deprecated rule 'jsx-a11y/label-has-for', rule 'jsx-a11y/label-has-associated-control' replaces it
 
 1.0.0 / 2018-08-16
 ==================
