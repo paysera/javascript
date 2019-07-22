@@ -18,7 +18,7 @@ module.exports = {
 
         // Deprecated as of eslint-plugin-jsx-a11y@6.1.0
         // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
-        'label-has-for': 'off',
+        'jsx-a11y/label-has-for': 'off',
 
         'no-plusplus': 'off',
         'import/prefer-default-export': 'off',
