@@ -39,6 +39,6 @@
     },
     "homepage": "https://github.com/paysera/js-style-guide",
     "devDependencies": {
-        "markdownlint-cli": "^0.3.1"
+        "markdownlint-cli": "^0.25.0"
     }
 }
