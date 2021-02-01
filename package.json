@@ -1,9 +1,10 @@
 {
     "name": "@paysera/js-style-guide",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "A mostly reasonable approach to JavaScript.",
     "scripts": {
         "preinstall": "npm run install:config && npm run install:config:base",
+        "postinstall": "rm -rf node_modules/markdownlint-cli/node_modules/markdownlint",
         "install:config": "cd packages/eslint-config && npm prune && npm install",
         "install:config:base": "cd packages/eslint-config-base && npm prune && npm install",
         "lint": "markdownlint --config linters/.markdownlint.json README.md */README.md",
@@ -39,6 +40,7 @@
     },
     "homepage": "https://github.com/paysera/js-style-guide",
     "devDependencies": {
-        "markdownlint-cli": "^0.3.1"
+        "markdownlint": "^0.20.4",
+        "markdownlint-cli": "^0.23.2"
     }
 }

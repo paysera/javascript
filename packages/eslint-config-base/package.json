@@ -4,8 +4,9 @@
     "description": "Paysera's base JS ESLint config, following our styleguide",
     "main": "index.js",
     "scripts": {
-        "prelint": "editorconfig-tools check * rules/* test/*",
+        "prelint": "eclint check * rules/* test/*",
         "lint": "eslint --report-unused-disable-directives .",
+        "lint:config": "eslint --print-config index.js",
         "pretests-only": "node ./test/requires",
         "tests-only": "babel-tape-runner ./test/test-*.js",
         "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
@@ -38,24 +39,25 @@
     },
     "homepage": "https://github.com/paysera/js-style-guide",
     "devDependencies": {
-        "babel-preset-airbnb": "^2.5.3",
-        "babel-tape-runner": "^2.0.1",
-        "editorconfig-tools": "^0.1.1",
-        "eslint": "^4.19.1 || ^5.3.0",
-        "eslint-find-rules": "^3.3.1",
-        "eslint-plugin-import": "^2.14.0",
-        "in-publish": "^2.0.0",
-        "safe-publish-latest": "^1.1.2",
-        "tape": "^4.9.1"
+        "@babel/runtime": "^7.12.5",
+        "babel-preset-airbnb": "^4.5.0",
+        "babel-tape-runner": "^3.0.0",
+        "eclint": "^2.8.1",
+        "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+        "eslint-find-rules": "^3.6.1",
+        "eslint-plugin-import": "^2.22.1",
+        "in-publish": "^2.0.1",
+        "safe-publish-latest": "^1.1.4",
+        "tape": "^5.1.0"
     },
     "peerDependencies": {
-        "eslint": "^4.19.1 || ^5.3.0",
-        "eslint-plugin-import": "^2.14.0"
+        "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
+        "eslint-plugin-import": "^2.22.1"
     },
     "engines": {
-        "node": ">= 4"
+        "node": ">= 6"
     },
     "dependencies": {
-        "eslint-config-airbnb-base": "^13.1.0"
+        "eslint-config-airbnb-base": "^14.2.1"
     }
 }
