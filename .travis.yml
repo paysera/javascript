@@ -14,34 +14,34 @@ script:
 sudo: false
 env:
   matrix:
-  - 'TEST=true ESLINT=5 PACKAGE=@paysera/eslint-config-base'
-  - 'TEST=true ESLINT=5 PACKAGE=@paysera/eslint-config'
-  - 'TEST=true ESLINT=6 PACKAGE=@paysera/eslint-config-base'
-  - 'TEST=true ESLINT=6 PACKAGE=@paysera/eslint-config'
-  - 'TEST=true ESLINT=7 PACKAGE=@paysera/eslint-config-base'
-  - 'TEST=true ESLINT=7 PACKAGE=@paysera/eslint-config'
+  - 'TEST=true ESLINT=5 PACKAGE=eslint-config-base'
+  - 'TEST=true ESLINT=5 PACKAGE=eslint-config'
+  - 'TEST=true ESLINT=6 PACKAGE=eslint-config-base'
+  - 'TEST=true ESLINT=6 PACKAGE=eslint-config'
+  - 'TEST=true ESLINT=7 PACKAGE=eslint-config-base'
+  - 'TEST=true ESLINT=7 PACKAGE=eslint-config'
 matrix:
   fast_finish: true
   include:
   - node_js: "lts/*"
-    env: PREPUBLISH=true ESLINT=5 PACKAGE=@paysera/eslint-config-base
+    env: PREPUBLISH=true ESLINT=5 PACKAGE=eslint-config-base
   - node_js: "lts/*"
-    env: PREPUBLISH=true ESLINT=5 PACKAGE=@paysera/eslint-config
+    env: PREPUBLISH=true ESLINT=5 PACKAGE=eslint-config
   - node_js: "lts/*"
-    env: PREPUBLISH=true ESLINT=6 PACKAGE=@paysera/eslint-config-base
+    env: PREPUBLISH=true ESLINT=6 PACKAGE=eslint-config-base
   - node_js: "lts/*"
-    env: PREPUBLISH=true ESLINT=6 PACKAGE=@paysera/eslint-config
+    env: PREPUBLISH=true ESLINT=6 PACKAGE=eslint-config
   - node_js: "lts/*"
     env: LINT=true
   - node_js: "lts/*"
-    env: PREPUBLISH=true ESLINT=7 PACKAGE=@paysera/eslint-config-base
+    env: PREPUBLISH=true ESLINT=7 PACKAGE=eslint-config-base
   - node_js: "lts/*"
-    env: PREPUBLISH=true ESLINT=7 PACKAGE=@paysera/eslint-config
+    env: PREPUBLISH=true ESLINT=7 PACKAGE=eslint-config
   - node_js: "lts/*"
     env: LINT=true
   exclude:
   allow_failures:
-  - env: PREPUBLISH=true ESLINT=5 PACKAGE=@paysera/eslint-config-base
-  - env: PREPUBLISH=true ESLINT=5 PACKAGE=@paysera/eslint-config
-  - env: PREPUBLISH=true ESLINT=6 PACKAGE=@paysera/eslint-config-base
-  - env: PREPUBLISH=true ESLINT=6 PACKAGE=@paysera/eslint-config
+  - env: PREPUBLISH=true ESLINT=5 PACKAGE=eslint-config-base
+  - env: PREPUBLISH=true ESLINT=5 PACKAGE=eslint-config
+  - env: PREPUBLISH=true ESLINT=6 PACKAGE=eslint-config-base
+  - env: PREPUBLISH=true ESLINT=6 PACKAGE=eslint-config
