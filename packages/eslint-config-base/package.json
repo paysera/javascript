@@ -1,6 +1,6 @@
 {
     "name": "@paysera/eslint-config-base",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Paysera's base JS ESLint config, following our styleguide",
     "main": "index.js",
     "scripts": {
@@ -9,7 +9,7 @@
         "lint:config": "eslint --print-config index.js",
         "pretests-only": "node ./test/requires",
         "tests-only": "babel-tape-runner ./test/test-*.js",
-        "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
+        "prepublish": "safe-publish-latest",
         "pretest": "npm run --silent lint",
         "test": "npm run --silent tests-only",
         "pretravis": ":",
@@ -44,7 +44,6 @@
         "babel-tape-runner": "^3.0.0",
         "eclint": "^2.8.1",
         "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
-        "eslint-find-rules": "^3.6.1",
         "eslint-plugin-import": "^2.22.1",
         "in-publish": "^2.0.1",
         "safe-publish-latest": "^1.1.4",

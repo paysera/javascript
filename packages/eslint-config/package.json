@@ -1,6 +1,6 @@
 {
     "name": "@paysera/eslint-config",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "description": "Paysera's ESLint config, following our styleguide",
     "main": "index.js",
     "scripts": {
@@ -8,13 +8,12 @@
         "lint": "eslint .",
         "pretests-only": "node ./test/requires",
         "tests-only": "babel-tape-runner ./test/test-*.js",
-        "prepublish": "(in-install || eslint-find-rules --unused) && (not-in-publish || npm test) && safe-publish-latest",
-
+        "prepublish": "safe-publish-latest",
         "test": "npm run --silent tests-only",
         "link:eslint": "cd node_modules/eslint && npm link --production && cd -",
         "pretravis": "npm run link:eslint && cd ../eslint-config-base && npm link eslint && npm install && npm link && cd - && npm link --no-save eslint-config-base",
         "travis": "npm run --silent tests-only",
-        "posttravis": "npm unlink --no-save eslint-config-base eslint >/dev/null &"
+        "posttravis": "npm unlink --no-save eslint-config-base eslint"
     },
     "repository": {
         "type": "git",
@@ -48,7 +47,6 @@
         "babel-tape-runner": "^3.0.0",
         "eclint": "^2.8.1",
         "eslint": "^5.16.0 || ^6.8.0 || ^7.2.0",
-        "eslint-find-rules": "^3.6.1",
         "eslint-plugin-import": "^2.22.1",
         "eslint-plugin-jsx-a11y": "^6.4.1",
         "eslint-plugin-react": "^7.22.0",
