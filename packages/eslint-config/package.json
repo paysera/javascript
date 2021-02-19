@@ -1,6 +1,6 @@
 {
     "name": "@paysera/eslint-config",
-    "version": "1.1.0",
+    "version": "1.2.0",
     "description": "Paysera's ESLint config, following our styleguide",
     "main": "index.js",
     "scripts": {
@@ -11,7 +11,7 @@
         "prepublish": "safe-publish-latest",
         "test": "npm run --silent tests-only",
         "link:eslint": "cd node_modules/eslint && npm link --production && cd -",
-        "pretravis": "npm run link:eslint && cd ../eslint-config-base && npm link eslint && npm install && npm link && cd - && npm link --no-save eslint-config-base",
+        "pretravis": "npm run link:eslint && cd ../eslint-config-base && npm link eslint && npm install --legacy-peer-deps && npm link && cd - && npm link --no-save eslint-config-base",
         "travis": "npm run --silent tests-only",
         "posttravis": "npm unlink --no-save eslint-config-base eslint"
     },
